@@ -410,7 +410,10 @@ gaspysat:
 		PauseOnLowPower: true
 	Power:
 		Amount: -100
+	RequiresPower:
+	CanPowerDown:
 	ProvidesRadar:
+
 
 gagap:
 	Inherits: ^Building
@@ -1222,6 +1225,44 @@ gtgcan:
 	WithMuzzleFlash:
 	Power:
 		Amount: -100
+
+atesla:
+	Inherits: ^Building
+	Buildable:
+		Queue: Support
+		BuildPaletteOrder: 35
+		Prerequisites: gapile, radar, ~structures.allies
+	Valued:
+		Cost: 1500
+	Tooltip:
+		Name: Prism Tower
+		Description: Advanced base defense.\nRequires power to operate.\nStrong vs infantry and heavy armor\nCannot target Aircraft
+	Building:
+		Footprint: x
+		Dimensions: 1, 1
+	Selectable:
+		Bounds: 44, 102, 0, -40
+	Health:
+		HP: 600
+	Armor:
+		Type: Steel
+	RevealsShroud:
+		Range: 8c0
+	DetectCloaked:
+		Range: 5
+	RenderBuildingCharge:
+		ChargeAudio: bpripow.wav
+	Armament:
+		Weapon: PrismShot
+		LocalOffset: 0,0,2500
+	AttackCharge:
+		ReloadTime: 60
+	Power:
+		Amount: -75
+	AutoTarget:
+	-RenderBuilding:
+	RequiresPower:
+	CanPowerDown:
 
 anypower:
 	Tooltip:

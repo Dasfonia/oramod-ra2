@@ -1067,3 +1067,36 @@ gtgcan:
 	icon: gcanicon
 		Offset: 0,0
 		UseTilesetCode: false
+
+atesla: # TODO: Add proper base frames.  Expanded sequence logic is required.
+	idle: ggpris_b
+		Start: 0
+		Length: 9
+		Tick: 100
+		Offset: 1, -15
+		ShadowStart: 18
+	damaged-idle: ggpris_b
+		Start: 9
+		Length: 9
+		Tick: 100
+		Offset: 1, -15
+		ShadowStart: 27
+	active: ggpris_a
+		Start: 0
+		Length: 10
+		Tick: 100
+		Offset: 1,-15
+		ShadowStart: 20
+	damaged-active: ggpris_a
+		Start: 10
+		Length: 10
+		Tick: 100
+		Offset: 1,-15
+		ShadowStart: 30
+	icon: prisicon
+		Start: 0
+	make: gtprismk
+		Start: 0
+		Length: 8
+		ShadowStart: 8
+		Offset: 1,-15
